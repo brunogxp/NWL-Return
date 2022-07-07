@@ -8,7 +8,6 @@ function onScroll() {
   activateMenuAtCurrentSection(services)
   activateMenuAtCurrentSection(about)
   activateMenuAtCurrentSection(contact)
-
 }
 
 function activateMenuAtCurrentSection(section) {
@@ -40,17 +39,17 @@ function activateMenuAtCurrentSection(section) {
 
 function showNavOnScroll() {
   if (scrollY > 0) {
-    navigation.classList.add('scroll')
+    document.getElementById('navigation').classList.add('scroll')
   } else {
-    navigation.classList.remove('scroll')
+    document.getElementById('navigation').classList.remove('scroll')
   }
 }
 
 function showBackToTopButtonOnScroll() {
   if (scrollY > 500) {
-    backToTopButton.classList.add('show')
+    document.getElementById('backToTopButton').classList.add('show')
   } else {
-    backToTopButton.classList.remove('show')
+    document.getElementById('backToTopButton').classList.remove('show')
   }
 }
 
